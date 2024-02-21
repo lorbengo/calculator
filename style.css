@@ -1,0 +1,74 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+h1 {
+  margin: 0;
+}
+
+.calculator {
+  width: 400px;
+  padding: 0.25rem;
+  border: 1px solid black;
+  border-radius: 0.25rem;
+  font-size: 1.25rem;
+}
+
+.display {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 4rem;
+  padding: 0.25rem;
+  border: inherit;
+  border-radius: inherit;
+  margin-bottom: 0.25rem;
+  font-size: 1.5rem;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  padding: inherit;
+  border: inherit;
+  border-radius: inherit;
+}
+
+.buttons > * {
+  flex: 0 1 calc(25% - 0.15em);
+  height: 75px;
+  padding: 0;
+  border: inherit;
+  border-radius: inherit;
+  font-size: inherit;
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+.operator {
+  background-color: coral;
+}
