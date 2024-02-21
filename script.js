@@ -12,6 +12,8 @@ function operate(op, n1, n2) {
       return multiply(n1, n2);
     case "/":
       return divide(n1, n2);
+    default:
+      console.log(`Unknown operator: ${op}`);
   }
 }
 
